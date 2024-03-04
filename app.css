@@ -1,0 +1,109 @@
+.filters {
+    width: calc(100% - 40px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 20px; /* Add margin for spacing */
+  }
+  
+  .filters label {
+    margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .logo {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.filter-options {
+    margin-left: 60px; /* Adjust margin to create space for the logo */
+}
+  
+  .filters input[type="text"],
+  .filters select {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .filters input[type="text"]:focus,
+  .filters select:focus {
+    outline: none;
+    background-color: white;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    pointer-events: none; /* Ensure the tooltip doesn't interfere with mouse events */
+  }
+  
+  .tooltip-content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+
+.facility-details {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    z-index: 999; /* Ensure facility details appear above other elements */
+    max-width: 300px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.facility-details strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.facility-details br {
+    margin-bottom: 5px;
+}
+#map {
+    width: calc(70vw); 
+    height: calc(70vh); 
+
+}
+#map {
+    position: absolute;
+    padding:10px;
+    top: 50%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, #003892, #479aff);
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+}

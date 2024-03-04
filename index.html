@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility Map with Filters</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    
+      
+    <div id="map"></div>
+    <div class="filters">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="filter-options">
+            <label for="address-filter">Address:</label>
+            <input type="text" id="address-filter">
+            <label for="state-filter">State:</label>
+            <select id="state-filter">
+                <option value="">All States</option>
+            </select>
+            <label for="division-filter">Division:</label>
+            <select id="division-filter">
+                <option value="">All Divisions</option>
+            </select>
+            <label for="timezone-filter">Timezone:</label>
+            <select id="timezone-filter">
+                <option value="">All Timezones</option>
+            </select>
+            <label for="emr-filter">EMR:</label>
+            <select id="emr-filter">
+                <option value="">All EMRs</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="tooltip" class="tooltip"></div>
+    <div id="facility-details" class="facility-details"></div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
